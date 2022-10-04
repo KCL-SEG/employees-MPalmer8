@@ -47,17 +47,17 @@ class Employee:
 
     def __str__(self):
         msg = ""
-        if self.contract = 'salary' and self.commission == 0 and self.bonus == 0:
+        if self.contract == 'salary' and self.commission == 0 and self.bonus == 0:
             msg=f"{self.name} works on a monthly salary of {self.pay}. Their total pay is {self.get_pay()}"
-        elif self.contract = 'hourly' and self.commission == 0 and self.bonus == 0:
+        elif self.contract == 'hourly' and self.commission == 0 and self.bonus == 0:
             msg=f"{self.name} works on a contract salary of {self.hours} at {self.pay}/hour. Their total pay is {self.get_pay()}"
-        elif self.contract = 'salary' and self.commission == 0 and self.bonus > 0:
+        elif self.contract == 'salary' and self.commission == 0 and self.bonus > 0:
             msg=f"{self.name} works on a monthly salary of {self.pay} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}"
-        elif self.contract = 'hourly' and self.commission == 0 and self.bonus > 0:
+        elif self.contract == 'hourly' and self.commission == 0 and self.bonus > 0:
             msg=f"{self.name} works on a contract salary of {self.hours} at {self.pay}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}"
-        elif self.contract = 'salary' and self.commission > 0 and self.bonus == 0:
+        elif self.contract == 'salary' and self.commission > 0 and self.bonus == 0:
             msg=f"{self.name} works on a monthly salary of {self.pay} and receives a commission for {self.NoOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}"
-        elif self.contract = 'hourly' and self.commission > 0 and self.bonus == 0:
+        elif self.contract == 'hourly' and self.commission > 0 and self.bonus == 0:
             msg=f"{self.name} works on a contract salary of {self.hours} at {self.pay}/hour and receives a commission for {self.NoOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}"
 
 
