@@ -48,7 +48,7 @@ class Employee:
     def __str__(self):
         msg = ""
         if self.contract == 'salary' and self.commission == 0 and self.bonus == 0:
-            msg=f"{self.name} works on a monthly salary of {self.pay}.  heir total pay is {self.get_pay()}."
+            msg=f"{self.name} works on a monthly salary of {self.pay}. Their total pay is {self.get_pay()}."
         elif self.contract == 'hourly' and self.commission == 0 and self.bonus == 0:
             msg=f"{self.name} works on a contract of {self.hours} hours at {self.pay}/hour. Their total pay is {self.get_pay()}."
         elif self.contract == 'salary' and self.commission == 0 and self.bonus > 0:
