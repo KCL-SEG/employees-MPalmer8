@@ -54,11 +54,11 @@ class Employee:
         elif self.contract == 'salary' and self.commission == 0 and self.bonus > 0:
             msg=f"{self.name} works on a monthly salary of {self.pay} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
         elif self.contract == 'hourly' and self.commission == 0 and self.bonus > 0:
-            msg=f"{self.name} works on a contract of {self.hours} at {self.pay}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
+            msg=f"{self.name} works on a contract of {self.hours} hours at {self.pay}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
         elif self.contract == 'salary' and self.commission > 0 and self.bonus == 0:
             msg=f"{self.name} works on a monthly salary of {self.pay} and receives a commission for {self.NoOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}."
         elif self.contract == 'hourly' and self.commission > 0 and self.bonus == 0:
-            msg=f"{self.name} works on a contract of {self.hours} at {self.pay}/hour and receives a commission for {self.NoOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}."
+            msg=f"{self.name} works on a contract of {self.hours} hours at {self.pay}/hour and receives a commission for {self.NoOfContracts} contract(s) at {self.commission}/contract. Their total pay is {self.get_pay()}."
 
 
         return msg
@@ -81,7 +81,6 @@ renee.setNoContracts(4)
 jan = Employee('Jan', 'hourly', 25, 150)
 jan.addCommission(220)
 jan.setNoContracts(3)
-print(str(jan))
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee('Robbie', 'salary', 2000)
@@ -90,3 +89,4 @@ robbie.addBonus(1500)
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', 'hourly', 30, 120)
 ariel.addBonus(600)
+print(str(ariel))
