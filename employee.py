@@ -2,9 +2,9 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name, paytype, pay, hours=0):
+    def __init__(self, name, contract, pay, hours=0):
         self.name = name
-        self.paytype = paytype
+        self.contract = contract
         self.pay = pay
         self.hours = hours
         self.bonus = 0
