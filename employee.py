@@ -68,7 +68,6 @@ class Employee:
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = Employee('Billie', 'salary', 4000)
-print(str(billie))
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = Employee('Charlie', 'hourly', 25, 100)
@@ -82,6 +81,7 @@ renee.setNoContracts(4)
 jan = Employee('Jan', 'hourly', 25, 150)
 jan.addCommission(220)
 jan.setNoContracts(3)
+print(str(jan))
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee('Robbie', 'salary', 2000)
